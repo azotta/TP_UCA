@@ -31,6 +31,7 @@ ls -la
 ## Fastq and Fasta files
 
 6 - Download the file Arabidopsis_thaliana.TAIR10.dna.chromosome.1.fa.gz from the OneDrive link 
+
 7 - Move the file to your new directory
 ```
 mv /path/download/Arabidopsis_thaliana.TAIR10.dna.chromosome.1.fa.gz .
