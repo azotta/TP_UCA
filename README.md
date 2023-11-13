@@ -5,6 +5,7 @@
 
 Download the data from: https://unice-my.sharepoint.com/:f:/r/personal/ana-paula_zotta-mota_unice_fr/Documents/TP_Master_BBC_2023?csf=1&web=1&e=9zIjSS
 
+## Basic terminal commands
 
 1-	Open your terminal 
 
@@ -26,6 +27,9 @@ cd TP_Genomics
 ```
 ls -la
 ```
+
+## Fastq and Fasta files
+
 6 - Download the file Arabidopsis_thaliana.TAIR10.dna.chromosome.1.fa.gz from the OneDrive link 
 7 - Move the file to your new directory
 ```
@@ -55,9 +59,31 @@ grep '>' Arabidopsis_thaliana.TAIR10.dna.chromosome.1.fa |wc
 awk '/^>/{if (l!="") print l; print; l=0; next}{l+=length($0)}END{print l}' Arabidopsis_thaliana.TAIR10.dna.chromosome.1.fa
 ```
 
-12 - Based on the header of the sequences, what is this ? 
+12 - Based on the header of the sequences, which kind of sequence is this? 
 
-13 - 
+13 - Download the file SRR4242474_1.fastq.gz 
+
+14 - Move the file to your TP_Genomics directory
+
+15 - Repeat the command to decompress the file
+
+15.1 - Check the size of the file decompressed and the compressed, what is the size in Gb ? 
+```
+ls -latrh
+```
+16 - How many lines do you have? Could you guess how many sequences do you have? 
+
+17 - Visualize the file using "more"  or "less"
+
+18 - Are these sequences from a short or long read technology ? 
+
+19 - How would you count the number of sequences in this kind of file? 
+
+
+
+
+
+
 
 
 
