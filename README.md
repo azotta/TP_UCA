@@ -62,6 +62,45 @@ mv test.txt /home/user/Documents (change accordling to your computer!)
 ```
 rm test.txt
 ```
+Download the file blast_result.txt
+
+This is a blast result (format 6) 
+
+|1.  qseqid   |   query or source (gene) sequence id |
+--------------|---------------------------------------
+|2.  sseqid   |   subject or target (reference genome) sequence id |
+|3.  pident   |   percentage of identical positions |
+|4.  length   |   alignment length (sequence overlap) |
+|5.  mismatch |   number of mismatches |
+|6.  gapopen  |   number of gap openings |
+|7.  qstart   |   start of alignment in query |
+|8.  qend     |   end of alignment in query |
+|9.  sstart   |   start of alignment in subject | 
+|10.  send    |    end of alignment in subject |
+|11.  evalue  |    expect value |
+|12.  bitscore|    bit score |
+
+11 - How many different contigs we could map our seq Mare_2_3_1 ?
+```
+ sort -u -k2,2 blast_result.txt |wc
+```
+
+12 - How many matchs have more than 90% of identity ?
+
+```
+awk '$3 > 90.0 {print $0}' blast_result.txt |wc
+```
+
+13 - Print only the query name, query start, query end 
+```
+Your time to play ;)
+```
+14 - Change the name of our subject from Mare_2_3_1 to subject_1
+```
+sed 's/Mare_2_3_1/subject_1/g' blast_result.txt |less
+```
+You also have the option to change it on the same file directly (Be extra careful), using the option -i
+
 
 
 ## Fastq and Fasta files
@@ -119,6 +158,25 @@ ls -latrh
 
 ## BAM/SAM files
 
+
+Download the file out_arabi_chr1.sam from the OneDrive
+
+1 - Visualize your file 
+
+2 - What are its characteristics ? 
+
+3 - How many reads were mapped to the reference ? 
+
+```
+awk -F"\t" '$3=="1" {print $0}' out_arabi_chr1.sam |wc
+```
+
+4 - Change the name of the chromosome 1 (which now is only the number 1, to chr 1)
+```
+awk '{ if ($3 == 1) $3 = "chr1"; print }' out_arabi_chr1.sam > new_file.sam
+```
+
+## VCF files
 
 
 
