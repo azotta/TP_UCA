@@ -139,7 +139,7 @@ awk '/^>/{if (l!="") print l; print; l=0; next}{l+=length($0)}END{print l}' Arab
 
 7 - Based on the header of the sequences, which kind of sequence is this? 
 
-8 - Download the file SRR4242474_1.fastq.gz 
+8 - Download the file ERR11202891.fastq 
 
 9 - Move the file to your TP_Genomics directory
 
