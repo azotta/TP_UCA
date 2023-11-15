@@ -4,6 +4,8 @@
 
 
 Download the data from: https://unice-my.sharepoint.com/:f:/r/personal/ana-paula_zotta-mota_unice_fr/Documents/TP_Master_BBC_2023?csf=1&web=1&e=9zIjSS
+(The data was downloaded from [TAIR](https://www.arabidopsis.org), [1001 genomes](https://1001genomes.org/data/GMI-MPI/releases/v3.1/), and [NCBI](https://www.ncbi.nlm.nih.gov/sra/?term=ERR11202891) )
+
 
 ## Basic terminal commands
 
@@ -177,6 +179,37 @@ awk '{ if ($3 == 1) $3 = "chr1"; print }' out_arabi_chr1.sam > new_file.sam
 ```
 
 ## VCF files
+
+Now you revised some useful commands, let's use this on our vcf file 
+
+Download the vcf file: only_chr1_arabi.vcf
+
+1- How many variants do we have? 
+
+2- Are they all from the same chromosome ? 
+
+
+Let's use the example of Arabidopsis thaliana: 
+In a recent [paper](https://www.nature.com/articles/s41467-023-42029-4), researchers discovered that the gene CCR1 (AT1G15950) encodes a cinnamoyl CoA reductase involved in lignin biosynthesis and cell proliferation in leaves. The ccr1 mutants exhibit increased ferulic acid (FeA) content, which has antioxidant activity and reduces the levels of reactive oxygen species (ROS) in plants. 
+
+Now, using the vcf file you downloaded, find the region of this gene (TIP: search on the TAIR website the start and end position of it): 
+
+3- There are variants on this gene? 
+
+4- How many? 
+
+5- How many genotypes are homozygous for any of these variants? 
+
+6- Are there any variants with all the genotypes being homozygous? 
+
+Across 32 ecotypes, we found a specific DNA/MULE-MuDR insertion that occurred in the intron region of CCR1 in only two relict ecotypes (Tibet-0 and Meh-0). This insertion reduced the expression of CCR1, which was confirmed using in vivo dual-luciferase (Dual-LUC) activity assays. 
+
+7- Can you find any insertions? How many ?
+
+8- There are any genotypes that are homozygous for these variants ? 
+
+
+
 
 
 
