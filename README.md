@@ -3,7 +3,7 @@
 # TP Atelier genomique – Master BBC
 
 
-Download the data from: https://unice-my.sharepoint.com/:f:/r/personal/ana-paula_zotta-mota_unice_fr/Documents/TP_Master_BBC_2023?csf=1&web=1&e=9zIjSS
+Download the data from [OneDrive](https://unice-my.sharepoint.com/:f:/g/personal/ana-paula_zotta-mota_unice_fr/EiD6ZMLU5SxHmIHmpi8qCjgBDbOMbKvBkGC7nEQ4NBQmKg?e=3sS2x0)
 (The data was downloaded from [TAIR](https://www.arabidopsis.org), [1001 genomes](https://1001genomes.org/data/GMI-MPI/releases/v3.1/), and [NCBI](https://www.ncbi.nlm.nih.gov/sra/?term=ERR11202891) )
 
 
