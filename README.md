@@ -68,8 +68,9 @@ Download the file blast_result.txt
 
 This is a blast result (format 6) 
 
-|1.  qseqid   |   query or source (gene) sequence id |
+| Column      | Description                           |
 --------------|---------------------------------------
+|1.  qseqid   | query or source (gene) sequence id |
 |2.  sseqid   |   subject or target (reference genome) sequence id |
 |3.  pident   |   percentage of identical positions |
 |4.  length   |   alignment length (sequence overlap) |
