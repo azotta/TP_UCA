@@ -49,6 +49,27 @@ vi file.txt
 
 nano file.txt
 ```
+## Basic `vi` Commands
+
+| Command       | Description                                 |
+|---------------|---------------------------------------------|
+| `i`           | Insert text before the cursor               |
+| `I`           | Insert text at the beginning of the line    |
+| `a`           | Append text after the cursor                |
+| `A`           | Append text at the end of the line          |
+| `Esc`         | Exit insert mode                            |
+| `x`           | Delete the character under the cursor       |
+| `dw`          | Delete from cursor to the end of the word   |
+| `dd`          | Delete the entire line                      |
+| `u`           | Undo the last action                        |
+| `Ctrl + r`    | Redo the undone action                      |
+| `:w`          | Save the file                               |
+| `:q`          | Quit if no changes have been made           |
+| `:wq` or `:x` | Save and quit                               |
+| `:q!`         | Quit without saving                         |
+| `gg`          | Go to the beginning of the file             |
+| `G`           | Go to the end of the file                   |
+| `/pattern`    | Search for a pattern in the f
 
 8 - Now, change the name of your file: 
 ```
